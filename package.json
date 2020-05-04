@@ -6,7 +6,7 @@
   "publisher": "bullcode",
   "icon": "assets/images/bullcode-logo.png",
   "author": "Gabriel Felipe Cegatta dos Santos",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gabrielfcs/bullcode-vscode-snippets"
