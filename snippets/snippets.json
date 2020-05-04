@@ -1,0 +1,92 @@
+{
+	"styles": {
+    "prefix": "styled",
+    "body": [
+      "import styled from 'styled-components/native';",
+      "",
+      "export const ${1:Container} = styled.${2:View}`",
+      "  ${3}",
+      "`;",
+      ""
+    ],
+    "description": "Create React Native Styled Components file"
+	},
+	"FlatList" : {
+		"prefix": ["flat", "list", "flt"],
+		"body": [
+			"<${1:FlatList}",
+			"\tdata={[]}",
+			"\trenderItem={({item, index}) => {",
+			"\t\treturn (",
+			"\t\t\t// Components",
+			"\t\t);",
+			"\t}}",
+			"\tkeyExtractor={(item, index) => index.toString()}",
+			"/>"],
+		"description": "A flatlist component."
+	},
+	"Interface" : {
+		"prefix": ["exi"],
+		"body": [
+			"export interface ${1:InterfaceName} {",
+			"\t$0",
+			"}"
+		],
+		"description": "An interface."
+	},
+	"Interface Extends" : {
+		"prefix": ["exie"],
+		"body": [
+			"export interface ${1:InterfaceName} extends ${2:InterfaceToBeExtended} {",
+			"\t$0",
+			"}"
+		],
+		"description": "An interface."
+	},
+	"componentFunctionalTypescript": {
+    "prefix": "rnfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "import { Container } from './styles';",
+      "",
+      "const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}: React.FC = () => {",
+			"\treturn (",
+			"\t\t<Container />",
+			"\t);",
+      "}",
+      "",
+      "export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}"
+    ],
+    "description": "Create React Native TypeScript Functional Component"
+	},
+	"componentFunctionalWithRedux": {
+    "prefix": "rnfcx",
+    "body": [
+      "import React from 'react';",
+      "",
+      "import { Container } from './styles';",
+      "",
+			"import { ApplicationState } from '../../store';",
+			"import { Dispatch, bindActionCreators } from 'redux';",
+      "import { connect } from 'react-redux';",
+      "",
+			"const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => {",
+			"\treturn (",
+			"\t\t<Container />",
+			"\t);",
+      "}",
+      "",
+      "const mapStateToProps = (state: ApplicationState) => state.$3;",
+      "",
+      "const mapDispatchToProps = (dispatch: Dispatch) => bindActionCreators($4, dispatch);",
+      "",
+      "export default connect(",
+      "\tmapStateToProps,",
+      "\tmapDispatchToProps",
+      ")(${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}});",
+      ""
+    ],
+    "description": "Create React Native functional component with Redux."
+  }
+}
