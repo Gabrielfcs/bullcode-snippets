@@ -15,6 +15,7 @@ Basta utilizar os comandos:
 | ---------------------:| ----------------------------------------------------------------------------- |
 |              `styled` | Cria um **Styled Component**                                                  |
 | `flat`, `list`, `flt` | Cria um componente **FlatList**                                               |
+|         `st`, `state` | Cria a estrutura do hook **useState**                                         |
 |                 `exi` | Cria uma exportação de uma **Interface**                                      |
 |                `exie` | Cria uma exportação de uma **Interface** já com o **extends**                 |
 |                `rnfc` | Cria um **Functional Component**                                              |
