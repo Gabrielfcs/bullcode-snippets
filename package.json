@@ -7,9 +7,6 @@
   "icon": "assets/images/bullcode-logo.png",
   "author": "Gabriel Felipe Cegatta dos Santos",
   "license": "ISC",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Gabrielfcs/bullcode-vscode-snippets"
